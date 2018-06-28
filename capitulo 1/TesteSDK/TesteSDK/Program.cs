@@ -35,7 +35,7 @@ namespace Aplication
             }
             */
             /*Exercicio, ler os coeficientes a, b, c, de uma equacao de segundo grau e mostrar o resultado da formula de baskara*/
-
+            /*
             double a, b, c;
             double delta;
             double bhaskaraX1;
@@ -43,11 +43,11 @@ namespace Aplication
 
             Console.WriteLine("Calculando a Bhaskará");
             Console.WriteLine("Coeficiente a:");
-            a = double.Parse(Console.ReadLine());
+            a = double.Parse(Console.ReadLine(), CultureInfo.InvariantCulture);
             Console.WriteLine("Coeficiente b:");
-            b = double.Parse(Console.ReadLine());
+            b = double.Parse(Console.ReadLine(), CultureInfo.InvariantCulture);
             Console.WriteLine("Coeficiente c:");
-            c = double.Parse(Console.ReadLine());
+            c = double.Parse(Console.ReadLine(), CultureInfo.InvariantCulture);
 
 
             delta = Math.Pow(b,2) - 4*a*c;
@@ -62,6 +62,32 @@ namespace Aplication
             else
             {
                 Console.WriteLine("Impossivel Calcular");
+            }
+
+            */
+
+            int idade = 0;
+            int totalIdade =0;
+            int quantidadeVezes = 0;
+
+            while (idade>=0)
+            {
+                Console.WriteLine("Digite uma idade ->:");
+                idade = int.Parse(Console.ReadLine());
+                if (idade > 0)
+                {
+                    totalIdade = totalIdade + idade;
+                    quantidadeVezes++;
+                }
+            }
+            if (totalIdade > 0)
+            {
+                double media = (double) (totalIdade / quantidadeVezes);
+                Console.WriteLine(media.ToString("F2"));
+            }
+            else
+            {
+                Console.WriteLine("IMPOSSIVEL DE CALCULAR");
             }
 
 
