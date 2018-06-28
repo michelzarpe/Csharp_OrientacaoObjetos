@@ -91,7 +91,7 @@ namespace Aplication
               */
 
 
-            
+            /*
             Console.WriteLine("Interações do loop->");
             int n = int.Parse(Console.ReadLine());
             for (int linha=0;linha<n;linha++)
@@ -109,13 +109,128 @@ namespace Aplication
 
             }
 
-            Console.ReadLine();
+
+         
+
+
+
+            int volumeInicial = 500;
+            int vazaoBomba = 10;
+            int tempo = 60;
+            if ((tempo*vazaoBomba)<volumeInicial)
+            {
+                Console.WriteLine(volumeInicial - (tempo*vazaoBomba));
+            }
+            else
+            {
+                Console.WriteLine("não é Possivel");
+            }
+
+            
+
+            Console.WriteLine("foto e Porta retrato -> Largura Altura");
+            String[] foto = Console.ReadLine().Split(' ');
+            String[] portaRetrato = Console.ReadLine().Split(' ');
+
+            int larguraFoto = int.Parse(foto[0]);
+            int alturaFoto = int.Parse(foto[1]);
+
+            int larguraPorta = int.Parse(portaRetrato[0]);
+            int alturaPorta = int.Parse(portaRetrato[1]);
 
 
 
 
+            //paisagem
+            if (larguraFoto <= larguraPorta && alturaFoto <= alturaPorta)
+            {
+                Console.WriteLine("Sim 1");
+            }
+            else
+            {
+                if (larguraFoto <= alturaPorta && alturaFoto <= larguraPorta)
+                {
+                    Console.WriteLine("Sim 2");
+                }
+                else
+                {
+                    Console.WriteLine("Não");
+                }
+
+            }
+
+       
 
 
+            Console.WriteLine("digite os 3 Arremessos: ");
+            String[] vetor = Console.ReadLine().Split(' ');
+            double[] arremessos = new double[vetor.Length];
+            double aux = 0;
+
+            for (int coluna = 0; coluna < vetor.Length; coluna++)
+            {
+                 arremessos[coluna] = double.Parse(vetor[coluna],CultureInfo.InvariantCulture);
+                 if (arremessos[coluna] > aux)
+                     aux = arremessos[coluna];
+
+            }
+            Console.WriteLine(aux);
+
+      
+
+            Console.WriteLine("Dois Numeros Inteiros:");
+            String[] vetor = Console.ReadLine().Split(' ');
+            int[] numeroDigitados = new int[vetor.Length];
+            int menor=99999999, maior=0;
+            int soma = 0;
+            for (int indice = 0; indice < vetor.Length; indice++)
+            {
+                numeroDigitados[indice] = int.Parse(vetor[indice]);
+                if (numeroDigitados[indice] > maior)
+                    maior = numeroDigitados[indice];
+
+                if (numeroDigitados[indice] < menor)
+                    menor = numeroDigitados[indice];
+
+            }
+            for (int indice = menor; indice < maior; indice++)
+            {
+                if (indice % 2 != 0)
+                    soma = soma + indice;  
+            }
+            Console.WriteLine("Soma:"+soma);
+            
+             
+
+
+            double duracaoBateria = 10.0;
+            int partidas = 3;
+            double[] horasDeJogoPorPartida = new double[] {5.0, 5.0, 5.0};
+            double totalHorasDesejadaAJogar=0;
+            double minutosSobrandoPorPartida = 0;
+
+            for (int indice = 0; indice < horasDeJogoPorPartida.Length; indice++)
+            {
+                totalHorasDesejadaAJogar = totalHorasDesejadaAJogar + horasDeJogoPorPartida[indice];
+            }
+
+            minutosSobrandoPorPartida = duracaoBateria;
+
+            for (int indice = 0; indice < horasDeJogoPorPartida.Length; indice++)
+            {
+                minutosSobrandoPorPartida = minutosSobrandoPorPartida - horasDeJogoPorPartida[indice];
+                if (minutosSobrandoPorPartida<0)
+                {
+                    Console.WriteLine("Recarregar");
+                }
+                else
+                {
+                    Console.WriteLine(minutosSobrandoPorPartida.ToString("F1"));
+                }
+            }
+
+            */
+          Console.ReadLine();
         }
     }
 }
