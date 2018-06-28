@@ -5,3 +5,10 @@ C:\Users\Usuario\Desktop\C#\TesteSDK\TesteSDK\obj\Debug\TesteSDK.csprojAssemblyR
 C:\Users\Usuario\Desktop\C#\TesteSDK\TesteSDK\obj\Debug\TesteSDK.csproj.CoreCompileInputs.cache
 C:\Users\Usuario\Desktop\C#\TesteSDK\TesteSDK\obj\Debug\TesteSDK.exe
 C:\Users\Usuario\Desktop\C#\TesteSDK\TesteSDK\obj\Debug\TesteSDK.pdb
+C:\Users\Usuario\Desktop\C#\Csharp_OrientacaoObjetos\capitulo 1\TesteSDK\TesteSDK\bin\Debug\TesteSDK.exe.config
+C:\Users\Usuario\Desktop\C#\Csharp_OrientacaoObjetos\capitulo 1\TesteSDK\TesteSDK\bin\Debug\TesteSDK.exe
+C:\Users\Usuario\Desktop\C#\Csharp_OrientacaoObjetos\capitulo 1\TesteSDK\TesteSDK\bin\Debug\TesteSDK.pdb
+C:\Users\Usuario\Desktop\C#\Csharp_OrientacaoObjetos\capitulo 1\TesteSDK\TesteSDK\obj\Debug\TesteSDK.csprojAssemblyReference.cache
+C:\Users\Usuario\Desktop\C#\Csharp_OrientacaoObjetos\capitulo 1\TesteSDK\TesteSDK\obj\Debug\TesteSDK.csproj.CoreCompileInputs.cache
+C:\Users\Usuario\Desktop\C#\Csharp_OrientacaoObjetos\capitulo 1\TesteSDK\TesteSDK\obj\Debug\TesteSDK.exe
+C:\Users\Usuario\Desktop\C#\Csharp_OrientacaoObjetos\capitulo 1\TesteSDK\TesteSDK\obj\Debug\TesteSDK.pdb
