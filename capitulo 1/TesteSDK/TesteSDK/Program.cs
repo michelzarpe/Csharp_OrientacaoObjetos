@@ -64,7 +64,7 @@ namespace Aplication
                 Console.WriteLine("Impossivel Calcular");
             }
 
-            */
+          
 
             int idade = 0;
             int totalIdade =0;
@@ -88,10 +88,28 @@ namespace Aplication
             {
                 Console.WriteLine("IMPOSSIVEL DE CALCULAR");
             }
+              */
 
+
+            
+            Console.WriteLine("Interações do loop->");
+            int n = int.Parse(Console.ReadLine());
+            for (int linha=0;linha<n;linha++)
+            {
+                Console.WriteLine("Valores Pares");
+                String [] vetor = Console.ReadLine().Split(' ');
+                if (double.Parse(vetor[1]) > 0)
+                {
+                    Console.WriteLine("-> "+ (double.Parse(vetor[0])/(double.Parse(vetor[1]))).ToString("F4",CultureInfo.InvariantCulture));
+                }
+                else
+                {
+                    Console.WriteLine("Não existe");
+                }
+
+            }
 
             Console.ReadLine();
-
 
 
 
