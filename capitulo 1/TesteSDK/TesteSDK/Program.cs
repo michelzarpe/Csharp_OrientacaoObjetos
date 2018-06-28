@@ -69,7 +69,6 @@ namespace Aplication
             int idade = 0;
             int totalIdade =0;
             int quantidadeVezes = 0;
-
             while (idade>=0)
             {
                 Console.WriteLine("Digite uma idade ->:");
@@ -83,7 +82,7 @@ namespace Aplication
             if (totalIdade > 0)
             {
                 double media = (double) (totalIdade / quantidadeVezes);
-                Console.WriteLine(media.ToString("F2"));
+                Console.WriteLine(media.ToString("F2",CultureInfo.InvariantCulture));
             }
             else
             {
