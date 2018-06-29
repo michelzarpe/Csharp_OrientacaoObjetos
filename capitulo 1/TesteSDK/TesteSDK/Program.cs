@@ -6,7 +6,7 @@ namespace Aplication
 {
     class Program
     {
-         static void Main(string[] args)
+        static void Main(string[] args)
         {
             /*Entrada e saida de dados*/
             /*
@@ -230,7 +230,50 @@ namespace Aplication
             }
 
             */
-          Console.ReadLine();
+            int volume = 0;
+            int verificacao = 1;
+            int volumeEquipamento = 0;
+            int interacao = 0;
+            Console.WriteLine("Volume do Equipamento: ");
+            volume = int.Parse(Console.ReadLine());
+            while (volume != 0)
+            {
+
+                if (volume >= 100)
+                {
+                    volumeEquipamento = (volume >= 100) ? 100 : 0;
+
+                    if (interacao != 0)
+                    { Console.WriteLine(volumeEquipamento); }
+
+
+                }
+                else
+                {
+                    volumeEquipamento = volumeEquipamento + volume;
+                    if (volumeEquipamento >= 100 || volumeEquipamento <= 0)
+                    {
+                        volumeEquipamento = (volumeEquipamento >= 100) ? 100 : 0;
+
+                        if (interacao != 0)
+                        { Console.WriteLine(volumeEquipamento); }
+                    }
+                    else
+                    {
+                        if (interacao != 0)
+                        { Console.WriteLine(volumeEquipamento); }
+                    }
+                }
+                interacao++;
+                Console.WriteLine("Volume do Equipamento: ");
+                volume = int.Parse(Console.ReadLine());
+            }
+
+
+
+
+
+            Console.ReadLine();
         }
     }
 }
