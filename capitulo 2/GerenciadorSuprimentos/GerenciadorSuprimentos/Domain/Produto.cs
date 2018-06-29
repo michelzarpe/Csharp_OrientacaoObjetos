@@ -13,6 +13,16 @@ namespace GerenciadorSuprimentos.Domain
         private double preco;
         private int quantidadeNoEstoque;
 
+        public Produto(){}
+
+
+        public Produto(string nome, double preco)
+        {
+            this.Nome = nome;
+            this.Preco = preco;
+            this.QuantidadeNoEstoque = 0;
+        }
+
         public Produto(string nome, double preco, int quantidadeNoEstoque)
         {
             this.Nome = nome;
@@ -59,7 +69,7 @@ namespace GerenciadorSuprimentos.Domain
             this.quantidadeNoEstoque -= quantidade;
         }
 
-        public string ToString()
+        public override string ToString()
         {
             return this.nome + ", " +
                 "" + this.preco.ToString("F2",CultureInfo.InvariantCulture) + "R$, " +

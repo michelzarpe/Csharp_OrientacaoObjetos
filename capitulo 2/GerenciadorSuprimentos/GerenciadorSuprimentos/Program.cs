@@ -18,6 +18,11 @@ namespace GerenciadorSuprimentos
             pod1.realizarSaida(3);
             Console.WriteLine(pod1.ToString());
 
+            Produto[] produtos = new Produto[2];
+            produtos[0] = pod1;
+            produtos[0] = new Produto("Som",9550.00);
+
+            Console.WriteLine(produtos[0].Nome);
             Console.ReadLine();
         }
     }
