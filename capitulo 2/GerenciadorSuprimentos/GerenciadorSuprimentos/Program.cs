@@ -58,6 +58,18 @@ namespace GerenciadorSuprimentos
                 Console.WriteLine("Não Existe");
             }
 
+
+            /*remove de a apenas os que tem em b*/
+            ConjuntoA.ExceptWith(ConjuntoB);
+
+            /*uniao, adiciona em A o que não tem em A com B*/
+            ConjuntoA.UnionWith(ConjuntoB);
+
+            /*deixa apenas os elementos de A, que tem igual em A e B*/
+            ConjuntoA.IntersectWith(ConjuntoB);
+
+
+
         }
     }
 }
