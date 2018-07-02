@@ -14,10 +14,10 @@ namespace Triangulo
             HashSet<Figura> lista_figuras = new HashSet<Figura>();
 
 
-            Console.WriteLine(Tela.getInicio("Michel Zarpelon"));
-            lista_figuras.Add(new FigTriangulo(4.00,4.50,5.00,"Azul","Triangulo"));
-            lista_figuras.Add(new Retangulo(12.00,15.00,"Amarelo","Retangulo"));
-            lista_figuras.Add(new FigTriangulo(3.00, 4.50, 5.00, "Verde", "Triangulo"));
+            Console.WriteLine(Tela.getInicio("Michel Zarpelon em "+Mes.Julho));
+            lista_figuras.Add(new FigTriangulo(4.00,4.50,5.00,Cor.Amarelo,"Triangulo"));
+            lista_figuras.Add(new Retangulo(12.00,15.00,Cor.Verde,"Retangulo"));
+            lista_figuras.Add(new FigTriangulo(3.00, 4.50, 5.00, Cor.Preto, "Triangulo"));
             
             foreach(Figura f in lista_figuras)
             {

@@ -8,20 +8,20 @@ namespace Triangulo.domain
 {
     abstract class Figura
     {
-        private string cor;
+        private Cor cor;
         private string nome;
   
 
-        public Figura(string cor, string nome)
+        public Figura(Cor cor, string nome)
         {
             this.cor = cor;
             this.nome = nome;
         }
 
         public string Nome { get => nome; set => nome = value; }
-        public string Cor { get => cor; set => cor = value; }
+        internal Cor Cor { get => cor; set => cor = value; }
 
-         public abstract double getArea();
+        public abstract double getArea();
 
     }
 }

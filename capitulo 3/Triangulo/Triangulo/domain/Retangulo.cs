@@ -13,7 +13,7 @@ namespace Triangulo.domain
 
     
 
-        public Retangulo(double altura, double largura, string cor, string nome) : base(cor,nome)
+        public Retangulo(double altura, double largura, Cor cor, string nome) : base(cor,nome)
         {
             this.altura = altura;
             this.largura = largura;

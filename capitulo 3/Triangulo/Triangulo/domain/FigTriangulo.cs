@@ -12,7 +12,7 @@ namespace Triangulo.domain
         private double b;
         private double c;
 
-        public FigTriangulo(double a, double b, double c, string cor,string nome) : base(cor,nome)
+        public FigTriangulo(double a, double b, double c, Cor cor,string nome) : base(cor,nome)
         {
             this.A = a;
             this.B = b;

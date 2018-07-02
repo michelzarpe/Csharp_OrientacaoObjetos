@@ -42,8 +42,10 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="domain\Cor.cs" />
     <Compile Include="domain\Figura.cs" />
     <Compile Include="domain\FigTriangulo.cs" />
+    <Compile Include="domain\Mes.cs" />
     <Compile Include="domain\Retangulo.cs" />
     <Compile Include="domain\Tela.cs" />
     <Compile Include="Program.cs" />
