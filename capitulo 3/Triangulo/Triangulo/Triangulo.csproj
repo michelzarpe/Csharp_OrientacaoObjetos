@@ -45,6 +45,7 @@
     <Compile Include="domain\Figura.cs" />
     <Compile Include="domain\FigTriangulo.cs" />
     <Compile Include="domain\Retangulo.cs" />
+    <Compile Include="domain\Tela.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
